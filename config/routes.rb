@@ -1,4 +1,6 @@
 Codey::Application.routes.draw do
+  resources :milestones
+
   resources :projects
 
   resources :users

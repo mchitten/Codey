@@ -1,3 +1,4 @@
 class Project < ActiveRecord::Base
-  belongs_to :user, primary_key: 'owner_id'
+  belongs_to :user
+  has_many :milestones
 end

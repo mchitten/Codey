@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203032825) do
+ActiveRecord::Schema.define(version: 20131203033844) do
+
+  create_table "milestones", force: true do |t|
+    t.integer  "project_id"
+    t.string   "title"
+    t.string   "version"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "projects", force: true do |t|
     t.string   "title"
